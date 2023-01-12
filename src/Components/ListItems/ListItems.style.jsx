@@ -11,7 +11,8 @@ export const useStyles = makeStyles({
         }
     },
     media: {
-        paddingTop: "56.25%"
+        paddingTop: "56.25%",
+        cursor:"pointer"
     },
     content: {
         textAlign: "left",
@@ -28,7 +29,8 @@ export const useStyles = makeStyles({
         borderRadius: "50px",
         border: "1px solid black",
         height: "200px",
-        width: "160px"
+        width: "160px",
+        padding:"5px"
     }
 
 })

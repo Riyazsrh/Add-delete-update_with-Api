@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 
 const routers = [
     {
-        name: "Home",
+        name: "Add User",
         path: "/",
 
     },

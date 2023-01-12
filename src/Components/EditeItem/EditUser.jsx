@@ -64,140 +64,141 @@ const EditF = () => {
 
     return (
         <Grid container style={{ width: "100%", maxWidth: "80%", alignSelf: "flex-start" }}>
-                <Grid Grid container spacing={3} style={{ textAlign: "left" }}>
-                    <Grid item xs={12} >
-                        <Grid container className={classes.inputContainer} style={{ marginTop: "2%" }}>
-                            <Grid item xs={12} sm={4}>
-                                <Typography variant="h4" gutterBottom>
-                                    Update User Data
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={12} sm={3}>
-                            </Grid>
+            <Grid Grid container spacing={3} style={{ textAlign: "left" }}>
+                <Grid item xs={12} >
+                    <Grid container className={classes.inputContainer} style={{ marginTop: "2%" }}>
+                        <Grid item xs={12} sm={4}>
+                            <Typography variant="h4" gutterBottom>
+                                Update User Data
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={3}>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Grid container>
-                            <Grid item xs={12} >
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                        <InputLabel>Name</InputLabel>
-                                    </Grid>
-                                    <Grid item xs={12} sm={5}>
-                                        <TextField
-                                            className="form-control"
-                                            placeholder="Enter name"
-                                            type="text"
-                                            name="name"
-                                            value={data.name}
-                                            onChange={handleChange("name")}
+                </Grid>
+                <Grid item xs={12}>
+                    <Grid container>
+                        <Grid item xs={12} >
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                    <InputLabel>Name</InputLabel>
+                                </Grid>
+                                <Grid item xs={12} sm={5}>
+                                    <TextField
+                                        className="form-control"
+                                        placeholder="Enter name"
+                                        type="text"
+                                        name="name"
+                                        value={data.name}
+                                        onChange={handleChange("name")}
 
-                                        />
-                                    </Grid>
+                                    />
                                 </Grid>
                             </Grid>
+                        </Grid>
 
-                            <Grid item xs={12}>
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                        <InputLabel>Mobile</InputLabel>
-                                    </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                    <InputLabel>Mobile</InputLabel>
+                                </Grid>
 
-                                    <Grid item xs={12} sm={5}>
-                                        <TextField
-                                            className="form-control"
-                                            type="file"
-                                            accept="image/*"
-                                            name="image"
-                                            onChange={handleChange("image")}
-                                        />
-                                    </Grid>
+                                <Grid item xs={12} sm={5}>
+                                    <TextField
+                                        className="form-control"
+                                        type="file"
+                                        accept="image/*"
+                                        name="image"
+                                        onChange={handleChange("image")}
+                                    />
                                 </Grid>
                             </Grid>
+                        </Grid>
 
-                            <Grid item xs={12}>
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                        <InputLabel>Email</InputLabel>
-                                    </Grid>
-                                    <Grid item xs={12} sm={5}>
-                                        <TextField
-                                            className="form-control"
-                                            placeholder="Enter email"
-                                            type="text"
-                                            name="email"
-                                            value={data?.email}
-                                            onChange={handleChange("email")}
-                                        />
-                                    </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                    <InputLabel>Email</InputLabel>
+                                </Grid>
+                                <Grid item xs={12} sm={5}>
+                                    <TextField
+                                        className="form-control"
+                                        placeholder="Enter email"
+                                        type="text"
+                                        name="email"
+                                        value={data?.email}
+                                        onChange={handleChange("email")}
+                                    />
                                 </Grid>
                             </Grid>
+                        </Grid>
 
-                            <Grid item xs={12}>
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                        <InputLabel>Address</InputLabel>
-                                    </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                    <InputLabel>Address</InputLabel>
+                                </Grid>
 
-                                    <Grid item xs={12} sm={5}>
-                                        <TextField
-                                            className="form-control"
-                                            placeholder="Enter address"
-                                            type="text"
-                                            name="address"
-                                            value={data?.address}
-                                            onChange={handleChange("address")}
-                                        />
-                                    </Grid>
+                                <Grid item xs={12} sm={5}>
+                                    <TextField
+                                        className="form-control"
+                                        placeholder="Enter address"
+                                        type="text"
+                                        name="address"
+                                        value={data?.address}
+                                        onChange={handleChange("address")}
+                                    />
                                 </Grid>
                             </Grid>
+                        </Grid>
 
-                            <Grid item xs={12}>
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                        <InputLabel>Latitude</InputLabel>
-                                    </Grid>
-                                    <Grid item xs={12} sm={5}>
-                                        <TextField
-                                            className="form-control"
-                                            placeholder="Enter latitude"
-                                            type="number"
-                                            name="latitude"
-                                            value={data.latitude}
-                                            onChange={handleChange("latitude")}
-                                        />
-                                    </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                    <InputLabel>Latitude</InputLabel>
+                                </Grid>
+                                <Grid item xs={12} sm={5}>
+                                    <TextField
+                                        className="form-control"
+                                        placeholder="Enter latitude"
+                                        type="number"
+                                        name="latitude"
+                                        value={data.latitude}
+                                        onChange={handleChange("latitude")}
+                                    />
                                 </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                        <InputLabel>Longitude</InputLabel>
-                                    </Grid>
-                                    <Grid item xs={12} sm={5}>
-                                        <TextField
-                                            className="form-control"
-                                            placeholder="Enter longitude"
-                                            type="number"
-                                            name="longitude"
-                                            value={data.longitude}
-                                            onChange={handleChange("longitude")}
-                                        />
-                                    </Grid>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                    <InputLabel>Longitude</InputLabel>
+                                </Grid>
+                                <Grid item xs={12} sm={5}>
+                                    <TextField
+                                        className="form-control"
+                                        placeholder="Enter longitude"
+                                        type="number"
+                                        name="longitude"
+                                        value={data.longitude}
+                                        onChange={handleChange("longitude")}
+                                    />
                                 </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Grid container className={classes.inputContainer}>
-                                    <Grid item xs={12} sm={2}>
-                                    </Grid>
-                                    <Grid item xs={12} sm={5}>
-                                        <Button type='submit' color='success' variant='contained' fullWidth onClick={handleSubmit}>Save</Button>
-                                    </Grid>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Grid container className={classes.inputContainer}>
+                                <Grid item xs={12} sm={2}>
+                                </Grid>
+                                <Grid item xs={12} sm={5} display='flex' justifyContent='space-between'>
+                                    <Button type='submit' color='success' variant='contained' onClick={handleSubmit}>Update</Button>
+                                    <Button type='submit' color='warning' variant='contained' onClick={() => history.push('/listitems')}>Cancel</Button>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
+            </Grid>
         </Grid>
 
     );

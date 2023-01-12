@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleMap, withGoogleMap, withScriptjs } from "react-google-maps";
+import { GoogleMap, withGoogleMap, withScriptjs, Marker } from "react-google-maps";
 
 function Map() {
   return (
@@ -7,7 +7,9 @@ function Map() {
       <GoogleMap
         defaultZoom={10}
         defaultCenter={{ lat: 20.5937, lng: 78.9629 }}
-      />
+      >
+        <Marker defaultDraggable position={{ lat: 20.5937, lng: 78.9629 }} />
+      </GoogleMap>
     </div>
   );
 }
@@ -22,7 +24,7 @@ export default function Mapps() {
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `100%` }} />}
         mapElement={<div style={{ height: `100%` }} />}
-        
+
       />
     </div>
   );

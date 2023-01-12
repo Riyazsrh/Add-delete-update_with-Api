@@ -88,7 +88,8 @@ const ListItems = () => {
                             className={classes.media}
                             sx={{ height: 140 }}
                             image="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg"
-                            title="green iguana"
+                            // image={item?.imageUrl}
+                            title={item.name}
                             alt="Error From Backend"
                         />
                         <CardContent className={classes.content}>
@@ -119,7 +120,7 @@ const ListItems = () => {
                                     <Button onClick={() => deleteUserHandler(item.id)} endIcon={<DeleteForeverIcon />} variant='outlined'>Delete</Button>
                                 </Grid>
                                 <Grid item>
-                                    <Link to={`edit/${item.id}`} style={{textDecoration:"none"}}>
+                                    <Link to={`edit/${item.id}`} style={{ textDecoration: "none" }}>
                                         <Button endIcon={<EditIcon />} variant='outlined'>Edit</Button>
                                     </Link>
                                 </Grid>
@@ -137,15 +138,16 @@ const ListItems = () => {
                     >
                         <Box sx={style}>
                             {viewUserData.map((elem) => (
-                                <Grid container display="flex" justifyContent="center" alignItems="center">
+                                <Grid container display="flex" justifyContent="space-around" alignItems="center">
                                     <Grid item xs={3}>
                                         <img onError="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg"
                                             src={elem.imageUrl} alt="Error From Backend"
                                             className={classes.img} />
                                     </Grid>
                                     <Grid item xs={6}>
-                                        <Grid container display="flex" justifyContent="space-evenly">
+                                        <Grid container display="flex" justifyContent="space-between">
                                             <Grid item sx={4}>
+                                                <Typography className={classes.heading}>Id</Typography>
                                                 <Typography className={classes.heading}>Name</Typography>
                                                 <Typography className={classes.heading}>Email</Typography>
                                                 <Typography className={classes.heading}>MobileNo</Typography>
@@ -154,6 +156,7 @@ const ListItems = () => {
                                                 <Typography className={classes.heading}>Longitude</Typography>
                                             </Grid>
                                             <Grid item sx={4}>
+                                                <Typography >{elem.id}</Typography>
                                                 <Typography >{elem.name}</Typography>
                                                 <Typography>{elem.email}</Typography>
                                                 <Typography>{elem.mobileNo}</Typography>
